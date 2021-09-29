@@ -10,9 +10,18 @@ header ul>li {
 p {
   text-align: center;
   color: black;
-} 
+}
 
 .card {
+  margin: auto;
+  border: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+}
+
+.kunst {
   margin: auto;
   border: 100%;
   box-sizing: border-box;
