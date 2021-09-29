@@ -2,6 +2,11 @@ header {
   font-size: 1.5em;
 }
 
+header > ul {
+  text-align: center;
+  /* The centering here is wonky, doesn't look centered */
+}
+
 header ul>li {
   display: inline-block;
   margin: 0.5em 2.5em;
