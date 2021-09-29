@@ -1,10 +1,43 @@
-header {
-  font-size: 1.5em;
+* {
+  box-sizing: border-box;
 }
 
-header ul>li {
-  display: inline-block;
-  margin: 0.5em 2.5em;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  font-size: 1.5em;
+  width: 100%;
+  padding: 0;
+}
+
+h1 {
+  position: relative;
+  width: auto;
+  text-align: center;
+}
+
+.page-list {
+  position: relative;
+  list-style: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-list > li {
+  position: relative;
+  padding: 0.5em 2.5em;
+  list-style: none;
+  margin: 0;
+  width: auto;
 }
 
 p {
@@ -28,6 +61,21 @@ p {
   padding: 10px;
   width: 70%;
   text-align: center;
+}
+
+.sidebyside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebyside ul {
+  list-style: upper-roman;
+  text-align: start;
+
+
 }
 
 
