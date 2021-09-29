@@ -1,9 +1,24 @@
+header {
+  font-size: 1.5em;
+}
+
+header ul>li {
+  display: inline-block;
+  margin: 0.5em 2.5em;
+}
 
 p {
   text-align: center;
   color: black;
 } 
 
-
+.card {
+  margin: auto;
+  border: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+}
 
 
