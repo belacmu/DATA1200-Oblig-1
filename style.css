@@ -12,6 +12,7 @@ header {
   font-size: 1.5em;
   width: 100%;
   padding: 0;
+  display: flex;
 }
 
 h1 {
@@ -29,18 +30,19 @@ ul{
 .page-list {
   position: relative;
   list-style: none;
-  width: auto;
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .page-list > li {
   position: relative;
-  padding: 0.5em 2.5em;
+  padding: 8px 16px;
   list-style: none;
   margin: 0;
   width: auto;
@@ -72,20 +74,3 @@ p {
   width: 70%;
   text-align: center;
 }
-
-.sidebyside {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.sidebyside ul {
-  list-style: upper-roman;
-  text-align: start;
-
-
-}
-
-
