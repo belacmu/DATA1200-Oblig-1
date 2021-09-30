@@ -15,11 +15,12 @@ h2 {
 
 section > img {
     position: relative;
-    width: 70vw;
-    height: 80vw;
+    width: 40vh;
+    height: 50vh;
     object-fit: cover;
     object-position: 0 0;
-    border: 1px solid green;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 3px 6px 10px rgb(0, 0, 0);
     border-radius: 50%;
 }
 
@@ -37,3 +38,26 @@ section > img {
     text-align: start;
   }
   
+  
+  body {
+    background-image: linear-gradient(to bottom right,rgb(47, 135, 97), rgb(167, 242, 210));
+  }
+
+  .page-list > li {
+    display: flex;
+  }
+
+  .page-list > li > a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      will-change: transform, color, text-decoration;
+      transition: 250ms all ease-out;
+      transform-origin: center top;
+  }
+
+  .page-list > li > a:hover {
+      transform: translateY(8%) rotateX(25deg) scale(1.2);
+      perspective: 200px;
+      color: white;
+      text-decoration: underline white;
+  }
