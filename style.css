@@ -16,6 +16,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(to bottom right,rgb(47, 135, 97), rgb(167, 242, 210));
 }
 
 header {
@@ -30,6 +31,12 @@ h1 {
   position: relative;
   width: auto;
   text-align: center;
+  font-family: 'quicksandregular', 'Times New Roman', Times, serif;
+  font-size: 4em;
+  text-shadow: 1px 1px 1px rgba(0, 3, 2, 0.55);
+  user-select: none;
+  transition: 1s all ease-out;
+  will-change: transform, color, scale;
 }
 
 ul{
@@ -64,13 +71,10 @@ ul{
   padding: 8px 16px;
 }
 
-h1 {
-  text-align: center;
-}
-
 p {
   text-align: center;
   color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -91,28 +95,6 @@ p {
   text-align: center;
 }
 
-
-section {
-    position: relative;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100;
-}
-
-h1 {
-    position: relative;
-    width: auto;
-    font-family: 'quicksandregular', 'Times New Roman', Times, serif;
-    font-size: 4em;
-    text-shadow: 1px 1px 1px rgba(0, 3, 2, 0.55);
-    user-select: none;
-    transition: 1s all ease-out;
-    will-change: transform, color, scale;
-}
-
 h1:hover {
     transform: rotateZ(3deg);
     z-index: 1000;
@@ -124,6 +106,18 @@ h2 {
     position: relative;
     width: auto;
     font-family: 'quicksandregular', 'Times New Roman', Times, serif;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100;
+  margin-bottom: 64px;
+  padding: 8px 16px;
 }
 
 section > img {
@@ -142,11 +136,6 @@ section > img {
 section > img:hover {
     transform: rotateX(180deg);
     scale: 1.5;
-}
-
-section {
-    margin-bottom: 64px;
-    padding: 8px 16px;
 }
 
 .sidebyside {
@@ -182,10 +171,6 @@ section {
   .sidebyside li {
       text-align: start;
   }
-  
-  body {
-    background-image: linear-gradient(to bottom right,rgb(47, 135, 97), rgb(167, 242, 210));
-  }
 
   .page-list > li {
     display: flex;
@@ -204,13 +189,6 @@ section {
       perspective: 200px;
       color: white;
       text-decoration: underline white;
-  }
-
-  p {
-    text-align: center;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-
   }
 
   .erfaring {
