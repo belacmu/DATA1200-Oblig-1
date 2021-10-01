@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
@@ -17,13 +16,14 @@ body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to bottom right,rgb(47, 135, 97), rgb(167, 242, 210));
+  background-attachment:fixed;
 }
 
-header {
+header > nav {
   position: relative;
   font-size: 1.5em;
   width: 100%;
-  padding: 0;
+  padding: 2%;
   display: flex;
 }
 
@@ -78,16 +78,7 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-.card {
-  margin: auto;
-  border: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-  width: 70%;
-  text-align: center;
-}
-
-.kunst {
+.brødtekst {
   margin: auto;
   border: 100%;
   box-sizing: border-box;
@@ -121,7 +112,7 @@ section {
   padding: 8px 16px;
 }
 
-section > img {
+.portrett {
     position: relative;
     width: 40vh;
     height: 45vh;
@@ -134,9 +125,14 @@ section > img {
     will-change: transform, scale;
 }
 
-section > img:hover {
-    transform: rotateX(180deg);
-    scale: 1.5;
+#indexportrett:hover {
+    transform: rotateY(180deg);
+    scale: 1.25;
+}
+
+#resumeportrett:hover {
+  transform: rotateX(180deg);
+    scale: 1.25;
 }
 
 .sidebyside {
@@ -198,4 +194,12 @@ section > img:hover {
 
   .utdanning {
       background-color: rgba(7, 59, 33, 0.4);
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .italics {
+    font-style: italic;
   }
